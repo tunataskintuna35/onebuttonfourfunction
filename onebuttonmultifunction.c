@@ -4,6 +4,12 @@
 #define	PWM1 P3_4
 #define PWM2 P3_5
 
+void delay()
+{
+	for(unsigned int i=0;i>65536;i++)
+		
+}
+
 
 void timer1 (void) interrupt 1 using 2
 {
@@ -19,6 +25,7 @@ void main()
 	if(button)
 {
 		butonsayici++;
-			if(butonsayici>4)
-				butonsayici=0;
-}
+			delay();
+				if(butonsayici>4)
+					butonsayici=0;
+}	
